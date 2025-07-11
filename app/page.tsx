@@ -101,7 +101,7 @@ export default function DeliveryApp() {
   const Logo = ({ size = "normal" }: { size?: "normal" | "large" }) => (
     <div className="flex items-center">
       <Package className={`${size === "large" ? "h-10 w-10" : "h-8 w-8"} text-blue-600 mr-3`} />
-      <span className={`${size === "large" ? "text-4xl" : "text-2xl"} font-bold text-blue-600`}>BoxNDrop</span>
+      <span className={`${size === "large" ? "text-4xl" : "text-2xl"} font-bold text-blue-600`}>CenDr</span>
     </div>
   )
 
@@ -110,7 +110,7 @@ export default function DeliveryApp() {
       {/* Header */}
       <div className="flex-shrink-0 pt-16 pb-8 px-4 text-center">
         <Logo size="large" />
-        <p className="text-gray-600 mt-4 text-lg">Welcome back to BoxNDrop</p>
+        <p className="text-gray-600 mt-4 text-lg">Welcome back to CenDr</p>
       </div>
 
       {/* Login Form */}
@@ -231,7 +231,7 @@ export default function DeliveryApp() {
       {/* Header */}
       <div className="flex-shrink-0 pt-12 pb-6 px-4 text-center">
         <Logo size="large" />
-        <p className="text-gray-600 mt-2">Join the BoxNDrop community</p>
+        <p className="text-gray-600 mt-2">Join the CenDr community</p>
       </div>
 
       {/* Signup Form */}
@@ -409,7 +409,7 @@ export default function DeliveryApp() {
           <div className="bg-white p-6 rounded-lg text-center">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
             <h3 className="text-lg font-semibold mb-2">Creating your account...</h3>
-            <p className="text-gray-600">Welcome to BoxNDrop!</p>
+            <p className="text-gray-600">Welcome to CenDr!</p>
           </div>
         </div>
       )}
@@ -419,7 +419,7 @@ export default function DeliveryApp() {
   const SenderHomeScreen = () => (
     <div className="h-screen bg-gray-50 flex flex-col overflow-hidden">
       {/* Header */}
-      <div className="bg-white px-4 pt-[calc(16px+env(safe-area-inset-top))] pb-4 shadow-sm flex-shrink-0" style={{paddingTop: `calc(16px + env(safe-area-inset-top))`}}>
+      <div className="bg-white px-4 pt-[calc(80px+env(safe-area-inset-top))] pb-4 shadow-sm flex-shrink-0" style={{paddingTop: 'calc(80px + env(safe-area-inset-top))'}}>
         <div className="flex items-center justify-between">
           <div>
             <Logo />
