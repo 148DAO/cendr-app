@@ -419,7 +419,7 @@ export default function DeliveryApp() {
   const SenderHomeScreen = () => (
     <div className="h-screen bg-gray-50 flex flex-col overflow-hidden">
       {/* Header */}
-      <div className="bg-white px-4 py-6 shadow-sm flex-shrink-0">
+      <div className="bg-white px-4 pt-[calc(24px+env(safe-area-inset-top))] pb-4 shadow-sm flex-shrink-0" style={{paddingTop: `calc(24px + env(safe-area-inset-top))`}}>
         <div className="flex items-center justify-between">
           <div>
             <Logo />
@@ -513,21 +513,21 @@ export default function DeliveryApp() {
         </div>
 
         {/* Bottom Navigation */}
-        <div className="bg-white border-t border-gray-200 mt-8">
+        <div className="bg-white border-t border-gray-200 mt-8" style={{paddingBottom: 'env(safe-area-inset-bottom)', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 50}}>
           <div className="flex justify-around py-2">
-            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("home")}>
+            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("home")}> 
               <Home className="h-5 w-5" />
               <span className="text-xs mt-1">Home</span>
             </Button>
-            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("profile")}>
+            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("profile")}> 
               <User className="h-5 w-5" />
               <span className="text-xs mt-1">Profile</span>
             </Button>
-            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("payments")}>
+            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("payments")}> 
               <CreditCard className="h-5 w-5" />
               <span className="text-xs mt-1">Payments</span>
             </Button>
-            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("support")}>
+            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("support")}> 
               <HelpCircle className="h-5 w-5" />
               <span className="text-xs mt-1">Support</span>
             </Button>
@@ -819,21 +819,21 @@ export default function DeliveryApp() {
         </div>
 
         {/* Bottom Navigation */}
-        <div className="bg-white border-t border-gray-200 mt-8">
+        <div className="bg-white border-t border-gray-200 mt-8" style={{paddingBottom: 'env(safe-area-inset-bottom)', position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 50}}>
           <div className="flex justify-around py-2">
-            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("driver-home")}>
+            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("driver-home")}> 
               <Truck className="h-5 w-5" />
               <span className="text-xs mt-1">Deliveries</span>
             </Button>
-            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("history")}>
+            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("history")}> 
               <History className="h-5 w-5" />
               <span className="text-xs mt-1">History</span>
             </Button>
-            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("profile")}>
+            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("profile")}> 
               <User className="h-5 w-5" />
               <span className="text-xs mt-1">Profile</span>
             </Button>
-            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("earnings")}>
+            <Button variant="ghost" className="flex-col h-16" onClick={() => setCurrentScreen("earnings")}> 
               <DollarSign className="h-5 w-5" />
               <span className="text-xs mt-1">Earnings</span>
             </Button>
